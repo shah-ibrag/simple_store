@@ -30,3 +30,4 @@ ActiveRecord::Schema[7.2].define(version: 2024_10_06_210314) do
 
   add_foreign_key "products", "categories"
 end
+ 

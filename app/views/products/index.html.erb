@@ -6,7 +6,8 @@
       <strong><%= link_to product.title, product_path(product) %></strong><br>
       <%= product.description %><br>
       Price: <%= number_to_currency(product.price) %><br>
-      Stock Quantity: <%= product.stock_quantity %>
+      Stock Quantity: <%= product.stock_quantity %><br>
+      Category: <%= product.category.name %>
     </li>
   <% end %>
 </ul>
