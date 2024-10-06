@@ -1,2 +1,12 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<h1>Products</h1>
+
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <strong><%= product.title %></strong><br>
+      <%= product.description %><br>
+      Price: <%= number_to_currency(product.price) %><br>
+      Stock Quantity: <%= product.stock_quantity %>
+    </li>
+  <% end %>
+</ul>
